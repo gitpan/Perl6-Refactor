@@ -1,0 +1,21 @@
+---
+name: Perl6-Refactor
+version: 0.01
+author:
+  - 'Ahmad M. Zawawi <ahmad.zawawi@gmail.com>'
+abstract: The great new Perl6::Refactor!
+license: perl
+resources:
+  homepage: http://padre.perlide.org/
+  license: http://dev.perl.org/licenses/
+  repository: http://svn.perlide.org/padre/trunk/Perl6-Refactor/
+build_requires:
+  Test::More: 0.86
+provides:
+  Perl6::Refactor:
+    file: lib/Perl6/Refactor.pm
+    version: 0.01
+generated_by: Module::Build version 0.280801
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
