@@ -1,36 +1,42 @@
 package Perl6::Refactor;
-
-use warnings;
-use strict;
-
-our $VERSION = '0.01';
-
-sub new {
-	#XXX-implement
+BEGIN {
+  $Perl6::Refactor::VERSION = '0.02_01';
 }
+
+use Moose;
+
+# ABSTRACT: Refactors Perl 6 code
 
 sub rename_variable {
 	my $self = shift;
+
 	#XXX-implement
 }
 
 sub find_variable_declaration {
 	my $self = shift;
+
 	#XXX-implement
 }
 
 # -------------- End of Perl6::Refactor ----------------
 1;
 
-__END__
+
+
+=pod
 
 =head1 NAME
 
-Perl6::Refactor - The great new Perl6::Refactor!
+Perl6::Refactor - Refactors Perl 6 code
+
+=head1 VERSION
+
+version 0.02_01
 
 =head1 SYNOPSIS
 
-Perl 6 Refactor includes tools for renaming variables, finding variables 
+Perl 6 Refactor includes tools for renaming variables, finding variables
 declarations and more....
 
 Perhaps a little code snippet.
@@ -39,57 +45,19 @@ Perhaps a little code snippet.
 
     my $foo = Perl6::Refactor->new();
 
-=head1 METHODS
-
-=head2 rename_variable
-
-=head2 find_variable_declaration
-
 =head1 AUTHOR
 
-Ahmad M. Zawawi, C<< <ahmad.zawawi at gmail.com> >>
+Ahmad M. Zawawi <ahmad.zawawi@gmail.com>
 
-=head1 BUGS
+=head1 COPYRIGHT AND LICENSE
 
-Please report any bugs or feature requests to C<bug-perl6-refactor at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Perl6-Refactor>.  I will be notified, and then you'll
-automatically be notified of progress on your bug as I make changes.
+This software is copyright (c) 2010 by Ahmad M. Zawawi.
 
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
-
-
-=head1 SUPPORT
-
-You can find documentation for this module with the perldoc command.
-
-    perldoc Perl6::Refactor
+=cut
 
 
-You can also look for information at:
+__END__
 
-=over 4
-
-=item * RT: CPAN's request tracker
-
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Perl6-Refactor>
-
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/Perl6-Refactor>
-
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/Perl6-Refactor>
-
-=item * Search CPAN
-
-L<http://search.cpan.org/dist/Perl6-Refactor/>
-
-=back
-
-=head1 COPYRIGHT & LICENSE
-
-Copyright (C) 2008-2009 by Ahmad Zawawi
-
-This program is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
